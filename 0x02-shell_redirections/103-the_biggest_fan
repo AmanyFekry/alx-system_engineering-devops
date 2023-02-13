@@ -1,2 +1,2 @@
 #!/bin/bash
-sort $file | uniq -c | sort -nr | head -n 11 | cut -d " " -f 6
+sort $file | cut -f1 | uniq -c | sort -nr | head -n 11 | cut --d=" " -f6
