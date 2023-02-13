@@ -1,6 +1,2 @@
 #!/bin/bash
-<<<<<<< HEAD
-sort | cut -f1 | uniq -c | sort -nr | head -n 11 | cut --d=" " -f6
-=======
-sort -t $'\t' -k 1,1 | cut -f1 | uniq -c | sort -nr | head -n 11 | cut --d=" " -f6
->>>>>>> e4a6a134aa70c4cb5e2f826e23cd5155cc33eae6
+sort -t$'\t' -k1,1 -nr | uniq -c | sort -nr | head -11 | awk '{print $2}'
