@@ -1,3 +1,2 @@
 #!/bin/bash
 sort < logfile | cut -f1 | uniq -c | sort -nr | head -n 11 | cut --delimiter=" " -f7
-
